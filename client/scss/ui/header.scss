@@ -1,0 +1,16 @@
+@import '../variables.scss';
+
+// @file
+// Header styles
+
+.header {
+  @include constrain(1400px);
+
+  padding-top: $spacing-2;
+  padding-bottom: $spacing-2;
+
+  @include bp-tablet {
+    padding-top: $spacing-2;
+    padding-bottom: $spacing-2;
+  }
+}

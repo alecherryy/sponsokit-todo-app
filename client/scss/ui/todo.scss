@@ -1,0 +1,42 @@
+@import '../variables.scss';
+
+// @file
+// Todo styles
+
+.todo {
+  @include constrain(600px);
+
+  margin-top: $spacing-3;
+}
+
+.todo__form {
+  padding: $spacing-2 0;
+}
+
+.todo__input {
+  appearance: none;
+  border: solid 1px transparent;
+  box-shadow: none;
+  color: $black;
+  font-family: $base-font-family;
+  font-size: $font-size-sm;
+  height: rem(45px);
+  padding: 0 $spacing-1;
+
+  &::placeholder {
+    color: $gray-5;
+    font-family: $base-font-family;
+    font-size: $font-size-sm;
+  }
+
+  &:focus {
+    border: solid 1px $teal-dark;
+    outline: none;
+  }
+}
+
+.todo__list {
+  @include list-clean();
+
+  padding: $spacing-3 0;
+}

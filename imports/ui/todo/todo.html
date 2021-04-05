@@ -1,0 +1,21 @@
+<template name="todo">
+  <div class="todo">
+    <label class="hide-completed">
+      <input type="checkbox" />
+        Hide Completed Tasks
+    </label>
+    {{#if currentUser}}
+      <form class="todo__form">
+        <input type="text" class="todo__input" ewname="text" placeholder="Task name" />
+      </form>
+      <button class="todo__btn">Add</button>
+    {{/if}}
+    <ul class="todo__list">
+      {{#each tasks}}
+        <li>
+          {{> task}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</template>

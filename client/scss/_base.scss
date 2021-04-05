@@ -10,8 +10,8 @@ html {
 }
 
 body {
-  background-color: $sand-light;
-  color: $black;
+  background-image: $gradient-dark;
+  color: $gray-3;
   font-family: $base-font-family;
   margin: 0;
   overflow-x: hidden;
@@ -22,7 +22,7 @@ body {
 
 %hN {
   font-family: $header-font-family;;
-  color: $black;
+  color: $white;
   font-weight: 700;
   hyphens: none;
   line-height: $line-height-normal;
