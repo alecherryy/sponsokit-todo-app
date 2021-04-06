@@ -132,6 +132,8 @@
   background-size: 15px;
   border-radius: 20px;
   display: block;
-  flex-basis: 24px;
+  right: -$spacing-4;
+  position: absolute;
+  width: 24px;
   margin-left: $spacing-2;
 }
