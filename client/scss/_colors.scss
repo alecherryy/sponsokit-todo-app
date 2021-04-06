@@ -1,7 +1,7 @@
 // @file
 // Colors
 
-$black: #030303;
+$black: #212121;
 $white: #ffffff;
 $gray-1: #EFEFEF;
 $gray-2: #F6F6F6;
@@ -11,14 +11,14 @@ $gray-5: #333;
 
 // Brand colors
 
-$sand: #E6DFCB;
-$sand-light: #F1ECD9;
+$blue-darkest: #1a1a2e;
+$blue-darker: #132743;
+$blue: #262E44;
 $sand-dark: #F3DFAA;
 
-$blue: #7BB0AC;
-$orange: #E5755E;
-$pink: #D8BDB1;
-$purple: #A02E55;
+$teal-light: #c6fced;
+$teal: #8ad7c1;
+$teal-dark: #80ffdb;
 
 // Utility colors
 // error
@@ -32,3 +32,6 @@ $yellow-dark: #ffbf00;
 // success
 $green: #7CFC00;
 $green-dark: #008000;
+
+// gradients
+$gradient-dark: linear-gradient(to top, $blue-darkest, $blue-darker)

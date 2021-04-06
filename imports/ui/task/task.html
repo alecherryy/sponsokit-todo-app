@@ -1,0 +1,22 @@
+<template name="task">
+  <div class="task">
+    {{#if isOwner}}
+      <button class="task__private" data-private="{{#if private}}true{{else}}false{{/if}}">
+        Private
+      </button>
+    {{/if}}
+    <div class="task__item">
+      <input type="checkbox" checked="{{completed}}" class="task__done" />
+      <label class="task__content">
+        {{text}}
+        <ul class="task__info list-inline">
+          <li>Created: {{createdAt}}</li>
+          <li>Owner: <b>{{username}}</b></li>
+        </ul>
+      </label>
+      {{#if isOwner}}
+        <button class="task__delete">Delete</button>
+      {{/if}}
+    </div>
+  </div>
+</template>

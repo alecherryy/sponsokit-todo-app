@@ -1,0 +1,33 @@
+<template name="todo">
+  <div class="todo">
+    {{#if currentUser}}
+      <div class="todo__add">
+        <form class="todo__form">
+          <input type="text" class="todo__input" name="text" placeholder="Task name" />
+        </form>
+        <button class="todo__btn">+ New Task</button>
+      </div>
+    {{/if}}
+    <div class="todo__filters">
+      <h6>Filters</h6>
+      <div class="todo__item">
+        <input type="checkbox" class="todo__checkbox todo__input--completed">
+        <label type="checkbox">Hide Completed Tasks</label>
+      </div>
+      {{#if currentUser}}
+        <div class="todo__item">
+          <input type="checkbox" class="todo__checkbox todo__input--yours" />
+          <label type="checkbox">Only My Tasks</label>
+        </div>
+      {{/if}}
+    </div>
+    <p class="text-bold">{{completedCount}} out of {{totalCount}} tasks completed</p>
+    <ul class="todo__list">
+      {{#each tasks}}
+        <li>
+          {{> task}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</template>

@@ -1,26 +1,15 @@
 <body>
   <div class="container">
     <header>
-    <h1>Todo List ({{incompleteCount}})</h1>
-
-    <label class="hide-completed">
-    <input type="checkbox" />
-        Hide Completed Tasks
-    </label>
-
-    {{> loginButtons}}
-
-    {{#if currentUser}}
-      <form class="new-task">
-        <input type="text" name="text" placeholder="Type to add new tasks" />
-      </form>
-    {{/if}}
+      {{> header}}
     </header>
-
-    <ul>
-      {{#each tasks}}
-        {{> task}}
-      {{/each}}
-    </ul>
+    <main role="main">
+      <div class="intro">
+        <h1>Welcome to <span class="text-regular">Daily Tasks</span></h1>
+        <p>This is your online platform to manage your daily chores and
+          keep track of progress. Create, update and delete new tasks as you please.</p>
+      </div>
+      {{> todo}}
+    </main>
   </div>
 </body>
