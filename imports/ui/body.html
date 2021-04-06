@@ -3,14 +3,13 @@
     <header>
       {{> header}}
     </header>
-    {{> todo}}
     <main role="main">
-      <h1>Todo List ({{incompleteCount}})</h1>
+      <div class="intro">
+        <h1>Welcome to <span class="text-regular">Daily Tasks</span></h1>
+        <p>This is your online platform to manage your daily chores and
+          keep track of progress. Create, update and delete new tasks as you please.</p>
+      </div>
+      {{> todo}}
     </main>
-    <!-- <ul>
-    {{#each tasks}}
-      {{> task}}
-    {{/each}}
-    </ul> -->
   </div>
 </body>

@@ -1,5 +1,10 @@
 <template name="header">
   <div class="header">
+    {{#if currentUser}}
+      <div class="header__greeting">Hello,
+        <span class="text-regular">{{currentUser.username}}</span>
+      </div>
+    {{/if}}
     {{> loginButtons}}
   </div>
 </template>

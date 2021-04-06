@@ -9,7 +9,7 @@ if (Meteor.isServer) {
   Meteor.publish('tasks', function tasksPublication() {
     return Tasks.find({
       $or: [
-        { owner: this.userId },
+        { owner: this.userId }, { createdAt: -1 },
       ],
     });
   });

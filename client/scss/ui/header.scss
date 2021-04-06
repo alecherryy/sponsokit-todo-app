@@ -6,6 +6,10 @@
 .header {
   @include constrain(1400px);
 
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $spacing-10;
   padding-top: $spacing-2;
   padding-bottom: $spacing-2;
 
@@ -13,4 +17,11 @@
     padding-top: $spacing-2;
     padding-bottom: $spacing-2;
   }
+}
+
+.header__greeting {
+  color: $white;
+  font-family: $base-font-family;
+  font-size: $font-size-lg;
+  font-weight: 700;
 }

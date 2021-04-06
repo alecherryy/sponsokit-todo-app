@@ -9,7 +9,14 @@
   margin-top: $spacing-3;
 }
 
+.todo__add {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .todo__form {
+  flex-basis: 60%;
   padding: $spacing-2 0;
 }
 
@@ -22,6 +29,7 @@
   font-size: $font-size-sm;
   height: rem(45px);
   padding: 0 $spacing-1;
+  width: 100%;
 
   &::placeholder {
     color: $gray-5;
@@ -32,6 +40,57 @@
   &:focus {
     border: solid 1px $teal-dark;
     outline: none;
+  }
+}
+
+.todo__btn {
+  @include button-clear();
+
+  background-color: $teal-dark;
+  color: $blue-darkest;
+  display: inline-block;
+  font-family: $header-font-family;
+  font-weight: 700;
+  height: rem(45px);
+  line-height: 1;
+  padding: 0 $spacing-3;
+  text-transform: uppercase;
+}
+
+.todo__filters {
+  padding: $spacing-3 0;
+}
+
+.todo__item {
+  display: inline-block;
+  font-family: $header-font-family;
+  font-size: $font-size-xs;
+  font-weight: 700;
+  margin: 0 $spacing-1 0 0;
+  letter-spacing: 1px;
+  position: relative;
+  text-transform: uppercase;
+
+  label {
+    border: solid 2px $teal-dark;
+    color: $white;
+    display: block;
+    padding: $spacing-1 $spacing-2;
+  }
+}
+
+.todo__checkbox {
+  appearance: none;
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  &:checked ~ label {
+    border-color: $teal-dark;
+    background-color: $teal-dark;
+    color: $blue-darker;
   }
 }
 

@@ -20,6 +20,10 @@ body {
   word-wrap: break-word;
 }
 
+main {
+  @include constrain(600px);
+}
+
 %hN {
   font-family: $header-font-family;;
   color: $white;

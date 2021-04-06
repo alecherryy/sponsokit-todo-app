@@ -1,0 +1,15 @@
+@import '../variables.scss';
+
+.login-link-text {
+  @include button-clear();
+
+  background-color: $teal-light;
+  border-radius: 30px;
+  color: $blue-darkest;
+  display: inline-block;
+  font-size: $font-size-sm;
+  font-weight: 700;
+  padding: $spacing-2 $spacing-4;
+  text-transform: capitalize;
+  text-decoration: none;
+}
