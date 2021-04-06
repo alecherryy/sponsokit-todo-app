@@ -16,7 +16,7 @@
 }
 
 .todo__form {
-  flex-basis: 60%;
+  flex-basis: calc(100% - 127px);
   padding: $spacing-2 0;
 }
 
